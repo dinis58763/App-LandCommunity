@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Delete User"
+                android:textAlignment="center"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As you are inactive, you can only delete
+                                            your account"
+                android:textSize="17sp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="80dp" />
+
+            <!--     <EditText
+                     android:id="@+id/et_emailRegister"
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:layout_marginLeft="20dp"
+                     android:layout_marginRight="20dp"
+                     android:layout_marginBottom="10dp"
+                     android:background="@drawable/et_custom"
+                     android:drawableLeft="@drawable/ic_email"
+                     android:fontFamily="@font/roboto_regular"
+                     android:hint="@string/e_mail"
+                     android:inputType="textEmailAddress"
+                     android:padding="15dp"
+                     android:textSize="15sp" /> -->
+
+            <TextView
+                android:id="@+id/tv_subtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type delete to delete your account"
+                android:textSize="17sp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/et_usernameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/et_custom"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Type delete"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_passwordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_custom"
+                android:drawableLeft="@drawable/ic_security"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Current Password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/et_checkBoxSeePassword"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/et_custom"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Show Password"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/btn_custom_do_inactive"
+                android:fontFamily="@font/roboto_regular"
+                android:onClick="sendMessageRegister"
+                android:text="Delete Account"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_down"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="191dp"
+                android:layout_marginRight="50dp"
+                android:drawablePadding="5dp"/>
+
+            <Button
+                android:id="@+id/goToLoginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="0dp"
+                android:onClick="sendMessageToLogin"
+                android:text="Reset"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

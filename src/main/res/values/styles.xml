@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SwitchGreen" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">#26a69a</item>
+    </style>
+
+    <style name="SwitchYellow" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">#FFEB3B</item>
+    </style>
+
+    <style name="SwitchOrange" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">#FF9800</item>
+    </style>
+
+    <style name="SwitchRed" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">#F44336</item>
+    </style>
+
+    <style name="SwitchInactive" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">#4CAF50</item>
+    </style>
+
+</resources>
